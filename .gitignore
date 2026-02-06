@@ -1,0 +1,84 @@
+# Legal Document Assistant - .gitignore
+
+# Environment
+.env
+.env.local
+.env.*.local
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Data directories (contain sensitive documents)
+data/
+uploads/
+*.db
+*.sqlite
+*.sqlite3
+
+# ChromaDB persistence
+chroma_data/
+
+# Logs and audit trails
+logs/
+*.log
+audit/
+
+# OCR temporary files
+*.tmp
+temp/
+
+# Document outputs
+output/
+exports/
+
+# Testing
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+
+# Type checking
+.mypy_cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Secrets (NEVER commit)
+*.key
+*.pem
+*.crt
+secrets/
