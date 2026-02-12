@@ -1,7 +1,7 @@
 # Legal Document Assistant - Dockerfile
 # Multi-stage build for production deployment
 
-FROM python:3.12-slim as builder
+FROM python:3.14-slim as builder
 
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE=1 \
@@ -24,7 +24,7 @@ RUN pip install --user -r requirements.txt
 RUN python -m spacy download en_core_web_lg
 
 # Production stage
-FROM python:3.12-slim
+FROM python:3.14-slim
 
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE=1 \
